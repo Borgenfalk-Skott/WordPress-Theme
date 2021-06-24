@@ -1,0 +1,30 @@
+body {
+  background-color: #fff;
+}
+
+/* Main column width */
+.wp-block {
+  max-width: 900px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+/* Add padding for common blocks */
+.wp-block-cover-image,
+.wp-block-cover,
+.wp-block-group,
+.wp-block-group.has-background {
+  padding: 30px;
+}
+
+.wp-block-cover {
+  margin-bottom: 0;
+}
