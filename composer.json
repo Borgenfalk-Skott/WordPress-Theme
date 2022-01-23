@@ -1,0 +1,13 @@
+{
+    "name": "borgenfalkskott/wordpress-theme",
+    "description": "A boilerplate for your next Wp theme",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tommyskott",
+            "email": "tommy@borgenfalk.se"
+        }
+    ],
+    "require": {}
+}
