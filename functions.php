@@ -8,15 +8,19 @@
 
 
   /**
+   * Define text domain for translations
+   */
+  define('TXT_DOMAIN', 'WP_THEME');
+
+
+  /**
    * After Setup Theme
    */
   add_action( 'after_setup_theme', function(){
-    $txtDomain = 'WP_THEME';
-
     /**
      * Load text domain and lang dir
      */
-    load_theme_textdomain( $txtDomain, get_template_directory() . '/languages' );
+    load_theme_textdomain( TXT_DOMAIN, get_template_directory() . '/languages' );
 
 
     /**
@@ -45,24 +49,6 @@
 
 
     /**
-     * Disable custom block font sizes
-     */
-    //add_theme_support( 'disable-custom-font-sizes' );
-
-     
-    /**
-     * Disable custom block colors
-     */
-    //add_theme_support( 'disable-custom-colors' );
-
-
-    /**
-     * Disable custom block gradients
-     */
-    //add_theme_support( 'disable-custom-gradients' );
-
-
-    /**
      * Add custom image sizes
      */
     add_image_size( 'thumb@2x', 300, 300, true );
@@ -74,8 +60,8 @@
      * Register nav menus
      */
     register_nav_menus(array(
-      'primary'       =>    __( 'Primary nav', $txtDomain ),
-      'secondary'     =>    __( 'Secondary nav', $txtDomain )
+      'primary'       =>    __( 'Primary nav', TXT_DOMAIN ),
+      'secondary'     =>    __( 'Secondary nav', TXT_DOMAIN )
     ));
 
   });
