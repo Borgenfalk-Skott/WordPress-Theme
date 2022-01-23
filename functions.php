@@ -47,7 +47,7 @@
     /**
      * Disable custom block font sizes
      */
-    add_theme_support( 'disable-custom-font-sizes' );
+    //add_theme_support( 'disable-custom-font-sizes' );
 
      
     /**
@@ -63,23 +63,6 @@
 
 
     /**
-     * Add custom block color palette
-     */
-    add_theme_support( 'editor-color-palette', array(
-      array(
-        'name' => esc_attr__( 'white', $txtDomain ),
-        'slug' => 'white',
-        'color' => '#ffffff',
-      ),
-      array(
-        'name' => esc_attr__( 'black', $txtDomain ),
-        'slug' => 'black',
-        'color' => '#000000',
-      ),
-    ));
-
-
-    /**
      * Add custom image sizes
      */
     add_image_size( 'thumb@2x', 300, 300, true );
@@ -91,7 +74,7 @@
      * Register nav menus
      */
     register_nav_menus(array(
-      'primary'       =>    __( 'Main nav', $txtDomain ),
+      'primary'       =>    __( 'Primary nav', $txtDomain ),
       'secondary'     =>    __( 'Secondary nav', $txtDomain )
     ));
 
