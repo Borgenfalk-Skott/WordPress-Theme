@@ -1,7 +1,7 @@
 <?php
   get_header();
 
-    echo '<h1>Template: 404.php</h1>';
+  echo '<h1>404!</h1>';
 
   get_footer();
 ?>

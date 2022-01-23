@@ -1,7 +1,6 @@
-      <footer>
-        Footer
-      </footer>
-    </div><!--.wrapper-->
+    <footer>
+      Footer
+    </footer>
 
     <?php wp_footer(); ?>
     <script type="text/javascript" src="<?=get_template_directory_uri();?>/build/app.min.js"></script>

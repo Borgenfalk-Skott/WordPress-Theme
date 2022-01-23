@@ -5,8 +5,6 @@
     while( have_posts() ){
       the_post();
 
-      echo '<h6>Template: single.php</h6>';
-
       the_title();
       the_content();
     }
