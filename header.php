@@ -17,12 +17,19 @@
     <?php wp_head(); ?>
   </head>
   <body class="<?=esc_attr( implode(' ', get_body_class()) );?>">
-    <header>
-      <?php
-        wp_nav_menu(array(
-          'container'           => 'nav',
-          'container_class'     => 'main-menu',
-          'theme_location'      => 'primary'
-        ));
-      ?>
-    </header>
+    <?php
+      global $mustacheEngine;
+
+      echo $mustacheEngine->render('header', array(
+        'logo_link_href'          =>  esc_url(home_url('/')),
+        'logo_img_alt'            =>  esc_attr( get_bloginfo('name') ),
+        'logo_img_src'            =>  get_template_directory_uri() . '/screenshot.png',
+
+        'main_menu'               =>  wp_nav_menu(array(
+          'container'             => 'nav',
+          'container_class'       => 'main-menu',
+          'theme_location'        => 'primary',
+          'echo'                  =>  false
+        ))
+      ));
+    ?>
