@@ -61,7 +61,9 @@
      */
     register_nav_menus(array(
       'primary'       =>    __( 'Primary nav', TXT_DOMAIN ),
-      'secondary'     =>    __( 'Secondary nav', TXT_DOMAIN )
+      'secondary'     =>    __( 'Secondary nav', TXT_DOMAIN ),
+      'tertiary'      =>    __( 'Tertiary nav', TXT_DOMAIN ),
+      'quaternary'    =>    __( 'Quaternary nav', TXT_DOMAIN )
     ));
 
   });
