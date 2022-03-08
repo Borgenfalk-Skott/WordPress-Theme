@@ -2,8 +2,14 @@
   /**
    * Composer autoloader
    */
-  if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+  if( file_exists( __DIR__ . '/vendor/autoload.php' ) ){
     require_once __DIR__ . '/vendor/autoload.php';
+
+    // Setup mustache
+    $mustacheEngine = new Mustache_Engine(array(
+      'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/tpls'),
+      'entity_flags' => ENT_QUOTES
+    ));
   }
 
 
