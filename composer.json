@@ -9,5 +9,7 @@
             "email": "tommy@borgenfalk.se"
         }
     ],
-    "require": {}
+    "require": {
+        "mustache/mustache": "^2.14"
+    }
 }
