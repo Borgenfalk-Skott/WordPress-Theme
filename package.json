@@ -1,6 +1,6 @@
 {
   "name": "wordpress-theme",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A boilerplate for your next Wp theme",
   "main": "index.js",
   "scripts": {
